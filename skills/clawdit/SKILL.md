@@ -47,8 +47,10 @@ In a single message, make parallel tool calls:
 # 2. {ref}/cheatsheet/CHEATSHEET.md
 # 3. {ref}/methodology/judging.md
 # 4. {ref}/methodology/report-format.md
-# 5. The protocol context file: {ref}/protocols/<type>.md (if detected)
-# 6. {ref}/attack-vectors/vectors-N.md (each agent gets a different file: vectors-1.md, vectors-2.md, vectors-3.md, vectors-4.md)
+# 5. {ref}/methodology/state-invariants.md
+# 6. {ref}/methodology/map-hunt-attack.md
+# 7. The protocol context file: {ref}/protocols/<type>.md (if detected)
+# 8. {ref}/attack-vectors/vectors-N.md (each agent gets a different file: vectors-1.md, vectors-2.md, vectors-3.md, vectors-4.md)
 ```
 
 Each bundle goes to `/tmp/audit-agent-{1,2,3,4}-bundle.md`. Print line counts. Every agent receives the full codebase — only the attack-vectors file differs per agent.
