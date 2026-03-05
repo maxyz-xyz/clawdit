@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "solodit": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-servers/solodit/dist/index.js"]
+    },
+    "static-analysis": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-servers/static-analysis/dist/index.js"]
+    }
+  }
+}

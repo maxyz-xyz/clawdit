@@ -1,0 +1,10 @@
+{
+  "name": "clawdit",
+  "version": "0.1.0",
+  "description": "Professional-grade Solidity smart contract security auditing with parallel agents, static analysis, and comprehensive vulnerability knowledge base",
+  "author": {
+    "name": "maxyz.xyz",
+    "url": "https://github.com/maxyz-xyz"
+  },
+  "repository": "https://github.com/maxyz-xyz/clawdit"
+}
