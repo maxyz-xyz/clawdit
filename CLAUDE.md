@@ -34,7 +34,7 @@ node ${CLAUDE_PLUGIN_ROOT}/mcp-servers/solodit/dist/index.js
 ## Validation
 
 ```bash
-uvx --from "git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref" skills-ref validate skills/audit
+uvx --from "git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref" skills-ref validate skills/clawdit
 ```
 
 ## Linting
