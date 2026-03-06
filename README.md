@@ -88,11 +88,11 @@ For quick iterations (e.g., re-checking after a fix), default mode is enough:
 
 ### Three-Tier Reference System
 
-| Tier | When loaded            | Content                                         |
-| ---- | ---------------------- | ----------------------------------------------- |
-| 0    | Always                 | CHEATSHEET.md — 170+ vulnerability types        |
-| 1    | Per protocol detection | 21 protocol-specific context files              |
-| 2    | On demand              | 83+ vulnerability case files with code patterns |
+| Tier | When loaded            | Content                                          |
+| ---- | ---------------------- | ------------------------------------------------ |
+| 0    | Always                 | CHEATSHEET.md — 170+ vulnerability types         |
+| 1    | Per protocol detection | 21 protocol-specific context files               |
+| 2    | On demand              | 107 vulnerability case files across 17 families  |
 
 ### Agents
 
@@ -110,13 +110,20 @@ For quick iterations (e.g., re-checking after a fix), default mode is enough:
 
 ## Sources
 
-Built from the best ideas across 8 open-source repos:
+Built from the best ideas across 9 open-source repos:
 
-- [pashov/skills](https://github.com/pashov/skills) — Parallel agent architecture, attack vectors, FP-gate
-- [forefy/.context](https://github.com/forefy/.context) — Protocol detection, vulnerability families
+- [pashov/skills](https://github.com/pashov/skills) — Parallel agent architecture, attack vectors, FP-gate (MIT)
+- [forefy/.context](https://github.com/forefy/.context) — Protocol detection, vulnerability families (MIT)
 - [kadenzipfel/scv-scan](https://github.com/kadenzipfel/scv-scan) — Vulnerability references, cheatsheet
-- [quillai-network/qs_skills](https://github.com/quillai-network/qs_skills) — Bayesian confidence scoring
-- [trailofbits/skills](https://github.com/trailofbits/skills) — Token integration patterns, entry-point analysis
-- [Archethect/sc-auditor](https://github.com/Archethect/sc-auditor) — Slither/Aderyn MCP tools
-- [marchev/claudit](https://github.com/marchev/claudit) — Solodit MCP server
+- [quillai-network/qs_skills](https://github.com/quillai-network/qs_skills) — Bayesian confidence scoring (MIT)
+- [trailofbits/skills](https://github.com/trailofbits/skills) — Token integration patterns, entry-point analysis (CC-BY-SA-4.0)
+- [Archethect/sc-auditor](https://github.com/Archethect/sc-auditor) — Slither/Aderyn MCP tools, Map-Hunt-Attack methodology
+- [marchev/claudit](https://github.com/marchev/claudit) — Solodit MCP server (MIT)
 - [Cyfrin/solskill](https://github.com/Cyfrin/solskill) — Solidity coding standards
+- [auditmos/skills](https://github.com/auditmos/skills) — Liquidation, staking, CLM, and auction vulnerability families (MIT)
+
+## License
+
+This project is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Creative Commons Attribution-ShareAlike 4.0 International).
+
+This license was chosen for compatibility with [trailofbits/skills](https://github.com/trailofbits/skills) (CC-BY-SA-4.0). You are free to use, modify, and redistribute this work — including commercially — as long as you provide attribution and distribute derivative works under the same license.
