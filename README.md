@@ -27,7 +27,7 @@ claude --plugin-dir .
 ## Usage
 
 ```
-/clawdit:audit [mode] [files...]
+/clawdit [mode] [files...]
 ```
 
 ### Modes
@@ -50,11 +50,11 @@ For the most thorough results, run **context first**, then **deep**:
 
 ```
 # 1. Build deep architectural understanding
-/clawdit:audit context
+/clawdit context
 
 # 2. Full audit with all agents (the context from step 1 is now
 #    in your conversation, giving the deep audit better grounding)
-/clawdit:audit deep
+/clawdit deep
 ```
 
 The context pass gives both you and subsequent agents a precise mental model of the codebase — state variables, invariants, trust boundaries, and data flows. When the deep audit runs in the same conversation, that context is available, which helps you evaluate findings and catch false positives.
@@ -62,26 +62,26 @@ The context pass gives both you and subsequent agents a precise mental model of 
 For quick iterations (e.g., re-checking after a fix), default mode is enough:
 
 ```
-/clawdit:audit src/Vault.sol
+/clawdit src/Vault.sol
 ```
 
 ### Examples
 
 ```
 # Audit all .sol files in current project
-/clawdit:audit
+/clawdit
 
 # Deep audit with adversarial reasoning
-/clawdit:audit deep
+/clawdit deep
 
 # Audit specific files only
-/clawdit:audit src/Vault.sol src/Router.sol
+/clawdit src/Vault.sol src/Router.sol
 
 # Deep audit on specific files
-/clawdit:audit deep src/Vault.sol src/Router.sol
+/clawdit deep src/Vault.sol src/Router.sol
 
 # Pre-audit context building
-/clawdit:audit context
+/clawdit context
 ```
 
 ## Architecture
